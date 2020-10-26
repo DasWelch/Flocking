@@ -39,6 +39,7 @@ public class Flocking : MonoBehaviour
     private void Start()
     {
         float angle = Random.Range(0, 2 * Mathf.PI);
+        Debug.Log(angle);
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle) + baseRotation);
         velocity = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
     }
